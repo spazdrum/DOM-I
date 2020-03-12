@@ -47,16 +47,13 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Task 3: Add new content
 
-// Change the color of the navigation text to be green.
-
-// Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want. 
-
 // ****************************
 //          Nav Bar 
 // ****************************
 
 const nav = document.querySelectorAll("nav a")
 nav.forEach(element => {
+  // Change the color of the navigation text to be green.
   element.style.color = "green"
 })
 
@@ -66,6 +63,23 @@ nav[2].textContent = siteContent.nav["nav-item-3"]
 nav[3].textContent = siteContent.nav["nav-item-4"]
 nav[4].textContent = siteContent.nav["nav-item-5"]
 nav[5].textContent = siteContent.nav["nav-item-6"]
+
+// Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want. 
+
+const newNav = document.querySelector("nav")
+
+const newElement1 = document.createElement('a')
+newElement1.textContent = "Home"
+newElement1.href = "#"
+newElement1.style.color = "green"
+
+const newElement2 = document.createElement('a')
+newElement2.textContent = "Blog"
+newElement2.href = "#"
+newElement2.style.color = "green"
+
+newNav.prepend(newElement1)
+newNav.appendChild(newElement2)
 
 // ****************************
 //         Top Content 
@@ -106,7 +120,8 @@ sectionContent[4].textContent = siteContent["main-content"]["vision-content"]
 // ****************************
 
 const contactHeader = document.querySelector(".contact h4")
-contactHeader[0].textContent = siteContent.contact["contact-h4"]
+contactHeader.textContent = siteContent.contact["contact-h4"]
+
 
 const contactContent = document.querySelectorAll(".contact p")
 contactContent[0].textContent = siteContent.contact["address"]
@@ -118,4 +133,4 @@ contactContent[2].textContent = siteContent.contact["email"]
 // ****************************
 
 const footer = document.querySelector("footer p")
-footer.textContent = siteContent.footer["copyright"]
+footer.innerText = siteContent.footer["copyright"]
