@@ -86,7 +86,7 @@ newNav.appendChild(newElement2)
 // ****************************
 
 const ctaText = document.querySelector(".cta-text h1")
-ctaText.innerHTML = siteContent['cta']['h1']
+ctaText.innerHTML = siteContent['cta']['h1'].replace(/\s/g, "<br>")
 
 const ctaBtn = document.querySelector(".cta-text button")
 ctaBtn.textContent = siteContent.cta["button"]
