@@ -71,3 +71,16 @@ nav[5].textContent = siteContent.nav["nav-item-6"]
 //         Top Content 
 // ****************************
 
+// ****************************
+//         Mid-Content 
+// ****************************
+
+const middleImg = document.querySelector("#middle-img")
+middleImg.src = siteContent["main-content"]["middle-img-src"]
+
+const sectionHeaders = document.querySelectorAll(".main-content h4")
+sectionHeaders[0].textContent = siteContent["main-content"]["features-h4"]
+sectionHeaders[1].textContent = siteContent["main-content"]["about-h4"]
+sectionHeaders[2].textContent = siteContent["main-content"]["services-h4"]
+sectionHeaders[3].textContent = siteContent["main-content"]["product-h4"]
+sectionHeaders[4].textContent = siteContent["main-content"]["vision-h4"]
