@@ -40,3 +40,13 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Task 1: create selectors to point your data into elements
+
+// Task 2: Update the HTML with the JSON data
+
+// Task 3: Add new content
+
+// Change the color of the navigation text to be green.
+
+// Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want. 
