@@ -71,6 +71,15 @@ nav[5].textContent = siteContent.nav["nav-item-6"]
 //         Top Content 
 // ****************************
 
+const ctaText = document.querySelector(".cta-text h1")
+ctaText.innerHTML = siteContent['cta']['h1']
+
+const ctaBtn = document.querySelector(".cta-text button")
+ctaBtn.textContent = siteContent.cta["button"]
+
+const ctaImg = document.querySelector("#cta-img")
+ctaImg.src = siteContent.cta["img-src"]
+
 // ****************************
 //         Mid-Content 
 // ****************************
@@ -104,4 +113,9 @@ contactContent[0].textContent = siteContent.contact["address"]
 contactContent[1].textContent = siteContent.contact["phone"]
 contactContent[2].textContent = siteContent.contact["email"]
 
+// ****************************
+//           Footer 
+// ****************************
 
+const footer = document.querySelector("footer p")
+footer.textContent = siteContent.footer["copyright"]
